@@ -35,4 +35,29 @@ class ArticleJpaRepositoryIT {
         }
     }
 
+    @Test
+    @Transactional(propagation = Propagation.NEVER)
+    internal fun `it should delete an article`() {
+        val articleEntity = createArticleEntity()
+
+        transactionTemplate.execute {
+            articleJpaRepository.save(articleEntity)
+        }
+        transactionTemplate.execute {
+            val article = articleJpaRepository.findByIdOrNull(articleEntity.id)
+
+            assertThat(article).isNotNull()
+        }
+
+        transactionTemplate.execute {
+            articleJpaRepository.delete(articleEntity)
+        }
+
+        transactionTemplate.execute {
+            val article = articleJpaRepository.findByIdOrNull(articleEntity.id)
+
+            assertThat(article).isNull()
+        }
+    }
+
 }

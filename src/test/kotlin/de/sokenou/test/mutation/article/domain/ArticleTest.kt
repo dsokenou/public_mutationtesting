@@ -59,13 +59,14 @@ class ArticleTest {
         "2,0.00",
         "17,4",
         // TODO additional tests
-//        "0.01,-0.01",
-//        "-0.01,-0.01",
-//        "0.00,0.00",
-//        "0.01,0.00",
-//        "1,1"
+        "0.01,-0.01",
+        "-0.01,-0.01",
+        "0.00,0.00",
+        "0.01,0.00",
+        "1,1"
     )
-    internal fun `it should not accept valid price as minimum and maximum price`(
+    
+    internal fun `it should not accept invalid price as minimum and maximum price`(
         minimumPrice: String,
         maximumPrice: String
     ) {

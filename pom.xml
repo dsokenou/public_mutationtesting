@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.3</version>
+        <version>3.5.3</version>
     </parent>
 
     <groupId>de.sokenou.test</groupId>
@@ -243,6 +243,12 @@
                     </dependency>
                 </dependencies>
                 <configuration>
+                    <!-- it is possible to use other mutators or defaults + additional mutators
+                    <mutators>
+                        <mutator>STRONGER</mutator>
+                        <mutator>REMOVE_INCREMENTS</mutator>
+                    </mutators>
+                    -->
                     <targetClasses>
                         <param>de.sokenou.test.*</param>
                     </targetClasses>

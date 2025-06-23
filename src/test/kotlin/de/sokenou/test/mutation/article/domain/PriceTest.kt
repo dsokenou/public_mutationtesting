@@ -67,6 +67,7 @@ class PriceTest {
     }
 
     // TODO test also difference of hash codes if not same...
+    // TODO if hash code generation has complex conditions, it may be better to exclude them from mutation testing
 
     @ParameterizedTest
     @ValueSource(strings = ["1.1110", "111.00111", "abc", "1.1.1"])
