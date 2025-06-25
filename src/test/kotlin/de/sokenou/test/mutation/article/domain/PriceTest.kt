@@ -65,13 +65,13 @@ class PriceTest {
 
         assertThat(price1.hashCode()).isEqualTo(price2.hashCode())
     }
-
     // TODO test also difference of hash codes if not same...
-    // TODO if hash code generation has complex conditions, it may be better to exclude them from mutation testing
 
     @ParameterizedTest
     @ValueSource(strings = ["1.1110", "111.00111", "abc", "1.1.1"])
     internal fun `it should not accept invalid price values`(value: String) {
-        assertThatThrownBy { Price.of(value) }.isInstanceOf(IllegalArgumentException::class.java)
+        assertThatThrownBy {
+            Price.of(value)
+        }.isInstanceOf(IllegalArgumentException::class.java)
     }
 }

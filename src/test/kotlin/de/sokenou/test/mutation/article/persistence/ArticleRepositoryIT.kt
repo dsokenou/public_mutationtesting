@@ -81,7 +81,7 @@ class ArticleRepositoryIT {
 
         articleRepository.delete(article)
 
-        // TODO this is the wrong assertion due to copy & paste error, should check if delete is called (not save)
+        // TODO this is the wrong assertion due to copy & paste error, should check if delete is called (not save) instead
         verify { articleJpaRepository.save(articleEntity) }
     }
 

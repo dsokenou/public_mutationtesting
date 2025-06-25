@@ -1,8 +1,11 @@
 package de.sokenou.test.mutation.stock.domain
 
 import de.sokenou.test.mutation.article.domain.createArticle
+import de.sokenou.test.mutation.article.domain.createArticleFull
 import org.assertj.core.api.Assertions.assertThat
+import java.util.UUID
 import kotlin.test.Test
+
 
 class StockItemTest {
 

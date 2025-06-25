@@ -11,5 +11,6 @@ fun createArticleEntity(
 ) =
     ArticleEntity(name, description, Article.MINIMUM_PRICE.value, Article.MAXIMUM_PRICE.value, id)
 
+// TODO we never tested the article to entity mapping (and vice versa)
 fun createArticleEntityWithPrices(mininumPrice: String, maximumPrice: String, id: UUID = UUID.randomUUID()) =
     ArticleEntity("an article", "a description", BigDecimal(mininumPrice), BigDecimal(maximumPrice), id)
