@@ -1,7 +1,8 @@
 package de.sokenou.test.mutation
 
+import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
-import kotlin.test.Test
+
 
 @SpringBootTest
 class ApplicationIT {

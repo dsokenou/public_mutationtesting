@@ -1,6 +1,10 @@
 # Mutation Testing Playground
 
-The project contains examples for mutation testing. Tested application is an incomplete stock backend implementation. The example demonstrates the difference between (good) code coverage and mutation coverage.
+The project contains examples for mutation testing. 
+Tested application is an incomplete stock backend implementation. 
+The example demonstrates the difference between (good) code coverage and mutation coverage.
+
+Follow `TODO`s in code to find the places that should be improved for better mutation coverage.
 
 ## How to run mutation tests
 

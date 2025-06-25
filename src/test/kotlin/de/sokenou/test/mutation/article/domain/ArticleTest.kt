@@ -1,7 +1,5 @@
 package de.sokenou.test.mutation.article.domain
 
-import de.sokenou.test.mutation.stock.domain.Amount
-import de.sokenou.test.mutation.stock.domain.StockItem
 import org.assertj.core.api.Assertions.assertThat
 import org.assertj.core.api.Assertions.assertThatThrownBy
 import org.junit.jupiter.api.Test

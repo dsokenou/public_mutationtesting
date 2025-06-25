@@ -2,7 +2,7 @@ package de.sokenou.test.mutation.stock.domain
 
 import org.assertj.core.api.Assertions
 import org.assertj.core.api.Assertions.assertThat
-import kotlin.test.Test
+import org.junit.jupiter.api.Test
 
 class AmountTest {
 
